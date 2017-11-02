@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/JLavoieMTL/console-wrapper/issues"
   },
-  "homepage": "https://github.com/JLavoieMTL/console-wrapper#readme"
+  "homepage": "https://github.com/JLavoieMTL/console-wrapper#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
 }

@@ -9,6 +9,8 @@ I saw in many projects developers who use console.log, console.warn, etc.. every
 
 This library is a wrapper around console that allow to show the proper level of logs in the code without touching the console.x occurrences in your code and without having to write a logger and inject it in all functions that need some logging. Instantiate this code once will allow you to set the log level without touching your console.X methods in your code.
 
+It keeps the line number of the original log.
+
 # Log level
 The following rules is applied:
 
@@ -37,6 +39,12 @@ The following methods are wrapped:
  - dir
  - log
 
+# Options
+
+- level: log level
+- callback: a function to execute before the log is output. It won't be executed if the log level is not high enough
+- forceCallback: force the callback to be executed even if the log level does not allow it
+
 # Examples
 
 ## Basic logger with log filtering
@@ -59,10 +67,21 @@ Suppose you're in prod, you may want to disable all logs:
 	   error: {
 	       callback: function(){
 		       reportToCloud('blah', arguments); // send error to remote server
-		   }
+		   },
+           forceCallback: true
 	   }
     }
-    new Logger(options)
+    window.logger = new Logger(options)
+
+## Reload options
+
+You can reload the logger without re-instantiating it:
+
+    logger = window.logger
+    logger.options.log.callback = function() {
+        // do something
+    }
+    logger.reloadOptions()
 
 # Build
 
