@@ -24,7 +24,7 @@ const LEVELS = {
 }
 
 class Logger {
-    public opt: any
+    opt
 
     constructor(opt) {
         var level = LEVELS[ opt.level ? opt.level : TRACE ]
