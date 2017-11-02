@@ -1,0 +1,23 @@
+{
+  "name": "console-wrapper",
+  "version": "1.0.0",
+  "description": "A console wrapper for typescript applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JLavoieMTL/console-wrapper.git"
+  },
+  "keywords": [
+    "console",
+    "typescript"
+  ],
+  "author": "Joel Lavoie <joel.lavoie.ing@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JLavoieMTL/console-wrapper/issues"
+  },
+  "homepage": "https://github.com/JLavoieMTL/console-wrapper#readme"
+}
