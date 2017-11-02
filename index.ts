@@ -24,11 +24,11 @@ const LEVELS = {
 }
 
 class Logger {
-    opt
+    public options
 
     constructor(opt) {
         var level = LEVELS[ opt.level ? opt.level : TRACE ]
-        this.opt = opt
+        this.options = opt
 
         console.trace = function (...args) {
             if (level <= TRACE) {
@@ -87,6 +87,7 @@ class Logger {
         }()
 
     }
+
 }
 
 export { Logger }
