@@ -1,6 +1,7 @@
 {
-  "name": "console-wrapper",
+  "name": "console_wrapper",
   "version": "1.0.0",
+  "private": false,
   "description": "A console wrapper for typescript applications",
   "main": "index.js",
   "scripts": {
