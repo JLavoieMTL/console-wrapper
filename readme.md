@@ -63,3 +63,11 @@ Suppose you're in prod, you may want to disable all logs:
 	   }
     }
     new Logger(options)
+
+# Build
+
+Run:
+
+    tsc index.ts
+
+to generate index.js
